@@ -1,3 +1,6 @@
+# PRS-QC: Toolkit for quality control checks when computing a PRS in genotyped samples.
+# Author: Vamsee Pillalamarri
+
 import pandas as pd
 import numpy as np
 from pysam import VariantFile
