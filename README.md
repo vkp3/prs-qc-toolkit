@@ -4,7 +4,7 @@ This toolkit provides quality control checks for Polygenic Risk Scores (PRS).
 
 It offers a suite of metrics and analyses to assess the reliability and applicability of PRS models to specific genetic datasets. By evaluating factors such as genetic coverage, allele frequency distributions, and genotyping quality, it helps researchers and clinicians gauge the confidence level in PRS results for genotyped samples. The toolkit aims to enhance the accuracy and interpretability of PRS in both research and clinical settings.
 
-Author: Vamsee Pillalamarri
+Author: Vamsee Pillalamarri (vpillal1@alumni.jh.edu)
 
 ## Features
 - VCF file validation
@@ -51,13 +51,17 @@ prs-qc-toolkit/
 │   └── prs_qc.py
 └── dat/
     ├── geno/
-    │   ├── vcf_1.biallelic.recode.vcf
+    │   ├── vcf_1.biallelic.recode.vcf // Input VCFs with biallelic records only.
     │   └── vcf_2.biallelic.recode.vcf
     ├── grs_models/
     │   ├── prs1.tsv
     │   └── prs2.tsv
     └── effect_alleles.afreq
 ```
+
+## Example Input
+- VCF files must be gunzipped (Future change will allow gzip) and placed in `./dat/geno`
+- PRS models (i.e., discovery GWAS summary statistics) in `./dat/grs_models/` should follow the same column format as example models found in `dat/grs_models`
 
 ## Example Output
 
